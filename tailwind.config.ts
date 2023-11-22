@@ -12,6 +12,7 @@ const config: Config = {
       primary: "#fb8722",
       light: "#ffffff",
       "light/100": "#dedede",
+      "light/500": "#878787",
     },
     container: {
       center: true,
