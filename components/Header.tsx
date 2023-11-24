@@ -10,15 +10,17 @@ const Header = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <header className="bg-primary relative text-light absolute w-screen">
+    <header className="bg-primary text-light absolute w-screen">
       <div className="container flex justify-between items-center py-4">
         <Link href="/" className="hover:opacity-75 transition-opacity z-10">
           <Image src="/logo.png" alt="Logo Viknaroff" width={200} height={73} />
         </Link>
         <nav
           className={`${
-            isMobileMenuOpen ? "translate-none" : "translate-y-full"
-          } transition-transform  max-lg:fixed inset-0  max-lg:bg-light/500 max-lg:pt-36
+            isMobileMenuOpen
+              ? "max-lg:translate-none"
+              : "max-lg:translate-y-full"
+          } transition-transform max-lg:fixed inset-0  max-lg:bg-light/500 max-lg:pt-36
          mx-auto flex max-lg:flex-col items-center text-2xl lg:text-xl  lg:space-x-16`}
         >
           <Link
